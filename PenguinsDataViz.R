@@ -1,3 +1,5 @@
+# Install packages we need
+
 install.packages("tidyverse")
 install.packages("palmerpenguins")
 library("ggplot2")
@@ -10,3 +12,5 @@ ggplot(data=penguins)+
   geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species, 
                          shape=species))+
   facet_grid(~species)
+
+
